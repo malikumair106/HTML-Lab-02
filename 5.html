@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Educational Portal Dashboard</title>
+</head>
+<body>
+
+    <h1>Educational Portal Dashboard</h1>
+
+    <section>
+        <h2>Virtual Campus Map & Reference</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.12345!2d72.9!3d33.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM2JzAwLjAiTiA3MsKwNTQnMDAuMCJF!5e0!3m2!1sen!2s!4v1600000000000" 
+            width="600" 
+            height="350" 
+            frameborder="1" 
+            align="left">
+        </iframe>
+    </section>
+
+    <div style="clear: both;"><br></div>
+
+    <section>
+        <h2>Assignment Submission</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <label for="assignment">Upload Assignment (PDF or DOCX only):</label><br>
+            <input type="file" id="assignment" name="assignment" accept=".pdf, .docx"><br><br>
+
+            <label for="instructions">Submission Notes & Instructions:</label><br>
+            <textarea id="instructions" name="instructions" rows="5" cols="50">Please review the attached document before submitting. Make sure your roll number and name are mentioned in the header.</textarea><br><br>
+
+            <input type="submit" value="Submit Assignment">
+        </form>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>Block vs. Inline Display Demonstration</h2>
+
+        <div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+            <h3>Block-Level Container (&lt;div&gt;)</h3>
+            
+            <p>
+                This paragraph (&lt;p&gt;) is a <strong>block-level element</strong> that starts on a new line and stretches across the full width available. Inside this paragraph, we have 
+                <span style="background-color: yellow; font-weight: bold;">styled inline text (&lt;span&gt;)</span> 
+                which only takes up as much width as necessary without breaking the line.
+            </p>
+
+            <p>
+                Here is another block-level paragraph demonstrating that <span style="background-color: lightgreen; font-weight: bold;">inline elements flow smoothly</span> within the text content.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

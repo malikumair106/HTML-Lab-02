@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival Registration</title>
+</head>
+
+<body>
+
+    <h1>Music Festival Registration Form</h1>
+
+    <p>
+        Welcome to our music festival!
+        Register now to enjoy an amazing musical experience.
+    </p>
+
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <label for="participantname">Participant Name:</label>
+        <input type="text" id="participantname" name="participantname"
+               placeholder="Enter your full name" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter your phone number" required>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" id="male" name="gender"
+                   value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender"
+                   value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender"
+                   value="other">
+            <label for="other">Other</label>
+
+        </fieldset>
+
+        <br>
+
+        <label for="tickettype">Ticket Type:</label>
+
+        <select id="tickettype" name="tickettype" required>
+            <option value="">-- Select Ticket Type --</option>
+            <option value="regular">Regular Ticket</option>
+            <option value="vip">VIP Ticket</option>
+            <option value="premium">Premium Ticket</option>
+            <option value="backstage">Backstage Pass</option>
+        </select>
+
+        <br><br>
+
+        <label for="tickets">Number of Tickets:</label>
+
+        <input type="number" id="tickets" name="tickets"
+               min="1" max="10" required>
+
+        <br><br>
+
+        <label for="eventdate">Preferred Event Date:</label>
+
+        <input type="date" id="eventdate" name="eventdate" required>
+
+        <br><br>
+
+        <label for="eventtime">Preferred Time:</label>
+
+        <input type="time" id="eventtime" name="eventtime" required>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Food Preference</legend>
+
+            <input type="radio" id="vegetarian" name="food"
+                   value="vegetarian" required>
+            <label for="vegetarian">Vegetarian</label>
+
+            <input type="radio" id="nonvegetarian" name="food"
+                   value="nonvegetarian">
+            <label for="nonvegetarian">Non-Vegetarian</label>
+
+            <input type="radio" id="vegan" name="food"
+                   value="vegan">
+            <label for="vegan">Vegan</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Facilities</legend>
+
+            <input type="checkbox" id="parking" name="facilities"
+                   value="parking">
+            <label for="parking">Parking</label>
+
+            <br>
+
+            <input type="checkbox" id="wifi" name="facilities"
+                   value="wifi">
+            <label for="wifi">Free Wi-Fi</label>
+
+            <br>
+
+            <input type="checkbox" id="refreshments" name="facilities"
+                   value="refreshments">
+            <label for="refreshments">Refreshments</label>
+
+            <br>
+
+            <input type="checkbox" id="seating" name="facilities"
+                   value="seating">
+            <label for="seating">Reserved Seating</label>
+
+        </fieldset>
+
+        <br>
+
+        <label for="identification">Upload Identification Document:</label>
+
+        <input type="file" id="identification"
+               name="identification"
+               accept=".pdf,.jpg,.jpeg,.png" required>
+
+        <br><br>
+
+        <label for="comments">Comments:</label>
+
+        <br>
+
+        <textarea id="comments" name="comments"
+                  rows="6" cols="50"
+                  placeholder="Write your comments or special requests..."></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Register Now">
+
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Music Festival. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

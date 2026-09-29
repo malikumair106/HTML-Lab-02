@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Student Portfolio</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        
+        h1, h2, h3 {
+            font-family: 'Fira Code', monospace;
+        }
+
+       
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1200x400/1e293b/ffffff?text=Computer+Science+Header');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        
+        nav {
+            background-color: #0f172a;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background-color: #3b82f6;
+        }
+
+       
+        .layout-container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+        }
+
+        main {
+            flex: 3;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            height: fit-content;
+        }
+
+       
+        section {
+            margin-bottom: 40px;
+        }
+
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px auto;
+            
+            opacity: 0.85;
+            transition: opacity 0.3s ease;
+        }
+
+        .profile-img:hover {
+            opacity: 1.0;
+        }
+
+        
+        .skills-section {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+
+        
+        .skills-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .skills-list li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        
+        .projects-container {
+            text-align: left;
+        }
+
+        .project-card {
+            
+            display: inline-block;
+            width: 48%;
+            margin-right: 3%;
+            margin-bottom: 20px;
+            vertical-align: top;
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 20px;
+            
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .project-card:nth-child(2n) {
+            margin-right: 0;
+        }
+
+       
+        .project-label {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ef4444;
+            color: #ffffff;
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+       
+        footer {
+            background-color: #0f172a;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .layout-container {
+                flex-direction: column;
+            }
+
+            .project-card {
+                display: block;
+                width: 100%;
+                margin-right: 0;
+            }
+
+            nav a {
+                display: block;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header id="home">
+        <h1>Muhammad Umair Malik</h1>
+        <p>Computer Science Student & Software Engineer</p>
+    </header>
+
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    
+    <div class="layout-container">
+        
+        
+        <main>
+            
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a Computer Science student passionate about web development, data structures, and building robust software applications.</p>
+            </section>
+
+            
+            <section id="skills" class="skills-section">
+                <h2>Technical Skills</h2>
+                <ul class="skills-list">
+                    <li>C++ & Java Programming</li>
+                    <li>HTML, CSS & JavaScript Web Development</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Database Management (SQL)</li>
+                    <li>Git & Version Control</li>
+                </ul>
+            </section>
+
+           
+            <section id="projects">
+                <h2>Featured Projects</h2>
+                <div class="projects-container">
+                    
+                    
+                    <div class="project-card">
+                        <span class="project-label">C++</span>
+                        <h3>Password Manager</h3>
+                        <p>A secure vault built using C++ with encrypted file persistence and master password protection.</p>
+                    </div>
+
+                    
+                    <div class="project-card">
+                        <span class="project-label">Web</span>
+                        <h3>Campus Portal</h3>
+                        <p>A comprehensive university management system interface built using HTML, CSS, and JavaScript.</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+       
+        <aside id="contact">
+            
+            <img class="profile-img" src="https://via.placeholder.com/150" alt="Student Profile Picture">
+            <h3>Quick Profile</h3>
+            <p><strong>Major:</strong> Computer Science</p>
+            <p><strong>Location:</strong> Pakistan</p>
+            <br>
+            <h3>Contact Info</h3>
+            <p>Email: student@example.com</p>
+            <p>GitHub: github.com/student</p>
+        </aside>
+
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2026 Muhammad Umair Malik. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

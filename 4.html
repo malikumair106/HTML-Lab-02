@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Tech Blog</title>
+    <style>
+        #myHeader {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .note {
+            background-color: #f0f0f0;
+            border-left: 4px solid #ff4500;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="myHeader">
+        <h1>Tech Blog</h1>
+        <p>Latest updates on technology and software</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> | 
+        <a href="#articles">Articles</a> | 
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Featured Posts</h2>
+
+            <article>
+                <h3>Article Title 1</h3>
+                <p>This is a block-level paragraph with a <span class="highlight">styled inline element</span> inside it.</p>
+                <div class="note">
+                    <strong>Note:</strong> This div uses the shared .note class for code reusability.
+                </div>
+            </article>
+
+            <article>
+                <h3>Article Title 2</h3>
+                <p>Another paragraph showcasing <span class="highlight">inline text</span> within a block element.</p>
+                <div class="note">
+                    <strong>Note:</strong> Reusing the same .note class on a second element.
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <aside>
+        <h3>Sidebar</h3>
+        <p>Sidebar content or advertisements here.</p>
+        <span class="note" style="display:block;">Shared class applied to span.</span>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Tech Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

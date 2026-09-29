@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+      
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+       
+        nav {
+            background-color: #334155;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            font-weight: 600;
+        }
+        nav a:hover {
+            background-color: #0ea5e9;
+        }
+
+       
+        .section-books {
+            background-color: #f1f5f9;
+            padding: 40px 20px;
+        }
+
+        .section-bestsellers {
+            background-color: #ffffff;
+            padding: 40px 20px;
+        }
+
+      
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1100px;
+            margin: 20px auto;
+        }
+
+        
+        .book-card {
+            border: 2px solid #cbd5e1;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+       
+        .book-card h3 {
+            font-family: 'Merriweather', serif;
+            color: #0f172a;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .book-card img {
+            width: 100%;
+            max-width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        
+        .bestseller-list {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 2;
+            /* Custom list style type */
+            list-style-type: upper-roman;
+        }
+
+        
+        .section-offers {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .offer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        
+        .discounted-book-img {
+            width: 180px;
+            height: 250px;
+            border-radius: 8px;
+            border: 3px solid #ffffff;
+            
+            opacity: 0.75;
+            transition: opacity 0.3s ease;
+        }
+
+        .discounted-book-img:hover {
+            opacity: 1.0;
+        }
+
+        
+        @media (max-width: 900px) {
+            .book-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .book-grid {
+                grid-template-columns: 1fr;
+            }
+            nav a {
+                display: block;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <h1>Page Turner Bookstore</h1>
+    </header>
+
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#categories">Categories</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+   
+    <section class="section-books" id="books">
+        <h2 style="text-align: center;">Featured Books</h2>
+        
+        
+        <div class="book-grid">
+            
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150x200" alt="Book Cover">
+                <h3>The Great Gatsby</h3>
+                <p>Author: F. Scott Fitzgerald</p>
+                <p><strong>$12.99</strong></p>
+            </div>
+
+           
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150x200" alt="Book Cover">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Author: Harper Lee</p>
+                <p><strong>$14.50</strong></p>
+            </div>
+
+            
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150x200" alt="Book Cover">
+                <h3>1984</h3>
+                <p>Author: George Orwell</p>
+                <p><strong>$10.99</strong></p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section-bestsellers">
+        <h2 style="text-align: center;">Top 5 Best-Selling Books</h2>
+        <ol class="bestseller-list">
+            <li>The Alchemist – Paulo Coelho</li>
+            <li>Atomic Habits – James Clear</li>
+            <li>Harry Potter and the Sorcerer's Stone – J.K. Rowling</li>
+            <li>The Hobbit – J.R.R. Tolkien</li>
+            <li>Sapiens: A Brief History of Humankind – Yuval Noah Harari</li>
+        </ol>
+    </section>
+
+    
+    <section class="section-offers" id="offers">
+        <h2>Special Weekend Offer!</h2>
+        <p>Get up to 50% off on selected fiction classics.</p>
+        
+        <div class="offer-container">
+            <img class="discounted-book-img" src="https://via.placeholder.com/180x250" alt="Discounted Book">
+            <div>
+                <h3>Limited Time Deal</h3>
+                <p>Use Coupon Code: <strong>READ2026</strong></p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
